@@ -14,28 +14,28 @@
     <footer>
         <div class="article wrap">
             <div class="article-link">
-                <h5>ChomDu</h5>
+                <h5 class="h5-anim">ChomDu</h5>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
             </div>
             <div class="article-link">
-                <h5>ChomDu</h5>
+                <h5 class="h5-anim">ChomDu</h5>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
             </div>
             <div class="article-link">
-                <h5>ChomDu</h5>
+                <h5 class="h5-anim">ChomDu</h5>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
             </div>
             <div class="article-link">
-                <h5>ChomDu</h5>
+                <h5 class="h5-anim">ChomDu</h5>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
                 <a href="">lorem ipsum</a>
@@ -45,7 +45,7 @@
         <div class="article-foo">
             <div class="article-foo-link">
                 <p>www.ChomDu.fr - All Rights Reserved 2021</p>
-                <a href="">privacy policy</a>
+                <a href="<?php echo esc_url(home_url('mentions-legal')) ?>">privacy policy</a>
                 <a href="">Term and conditions</a>
             </div>
             <div class="article-foo-social">
@@ -56,13 +56,13 @@
             </div>
         </div>
     </footer>
-    <script>
-        ScrollOut({
-            targets: 'h2,h3,h5,a,p,img'
-        })
-    </script>
+    
 
         <?php wp_footer(); ?>
-
+        <script>
+        ScrollOut({
+            targets: '.h2-anim,.h3-anim,.h5-anim,a,p,img'
+        })
+    </script>
     </body>
 </html>

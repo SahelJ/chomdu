@@ -16,14 +16,14 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="https://gmpg.org/xfn/11">``
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
 		<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body>
 	<?php wp_body_open(); ?>
     <header>
         <div class="header-haut">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <nav class="wrap">
-            <a href="#"><img class="logo-header" src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" alt="logo"></a>
+            <a href="#"><img class="logo-header" src="<?php echo get_template_directory_uri().'/asset/img/logo2.png'; ?>" alt="logo"></a>
             <div class="menu">
                 <a class="" href="#">Qui sommes-nous</a>
                 <a class="" href="#">Nous contacter</a>
@@ -47,11 +47,5 @@
                 <a class="" href="#">acceuil</a>
             </div>
         </nav>
-        <div class="header-nuage animate">
-            <div class="header-text wrap">
-                <h2>fast,reliable,flexible,support</h2>
-                <h3>Employemant screening & background check services</h3>
-                <a href="">learn more about us</a>
-            </div>
-        </div>
+      
     </header>

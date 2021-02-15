@@ -99,6 +99,6 @@ function chomdu_scripts() {
 	wp_deregister_script('jquery');
 
     wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/asset/js/main.js', array() ,'1.0.0', true );
-	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/asset/js/scroll-out.js', array() ,'1.0.0', true );
+	wp_enqueue_script( 'scroll-out', get_template_directory_uri() . '/asset/js/scroll-out.js', array() ,'1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'chomdu_scripts' );
