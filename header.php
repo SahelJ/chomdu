@@ -16,7 +16,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="https://gmpg.org/xfn/11">``
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 
@@ -47,11 +47,11 @@
                 <a class="" href="#">acceuil</a>
             </div>
         </nav>
-        <div class="header-nuage animate">
+        <!-- <div class="header-nuage animate">
             <div class="header-text wrap">
                 <h2>fast,reliable,flexible,support</h2>
                 <h3>Employemant screening & background check services</h3>
                 <a href="">learn more about us</a>
             </div>
-        </div>
+        </div> -->
     </header>
