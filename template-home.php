@@ -38,8 +38,8 @@ get_header(); ?>
         </div>
     </div>
         <div class="shape"><img src="<?php echo get_template_directory_uri() ?>/asset/img/fond_chemise.jpg" alt=""></div>
-    </section>
-    <section class="services wrap">
+</section>
+<section class="services wrap">
         <div class="services-title">
             <h4 class="h4-anim">Our services</h4>
             <a href="">
@@ -91,7 +91,7 @@ get_header(); ?>
                     reprehenderit eum nisi?</p>
             </div>
         </div>
-    </section>
+</section>
     <div class="header-nuage2 animate">
         <div class="header-text2 wrap">
             <h2 class="h2-anim">fast,reliable,flexible,support</h2>

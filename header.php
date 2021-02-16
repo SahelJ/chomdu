@@ -44,7 +44,7 @@
                 <a class="" href="#">Nous contacter</a>
                 <a class="" href="#">déposer un CV</a>
                 <a class="" href="#">Comment ça marche</a>
-                <a class="" href="#">acceuil</a>
+                <a class="" href="<?php echo esc_url(home_url('home')) ?>">acceuil</a>
             </div>
         </nav>
       
