@@ -672,9 +672,8 @@ nav img{
 }
 
 /* CV */
-/* 21/29 = 825/1165 */
 .container_cv{
-    align-self: center;
+    justify-content: center;
     display: flex;
     flex-flow: row nowrap;
     max-height: 1165px;
@@ -738,6 +737,32 @@ nav img{
     padding: 15px 15px 15px 15px;
 }
 
-.details{
+.sous_titre{
+    display: inline-flex;
+    color: #208dc4;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
 
+.paragraphe_section h4{
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #2B9BD4;
+}
+.paragraphe_section{
+    margin-bottom: 30px;
+}
+
+.details_experience{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    color: #2B9BD4;
+    margin-bottom: 5px;
+}
+.intitule_description{
+    margin-bottom: 15px;
+}
+.perso_paragraphe{
+    margin-bottom: 10px;
 }

@@ -40,37 +40,56 @@ get_header(); ?>
             <div class="background">
                 <h3 class="titre_section">Experience</h3>
             </div>
-            <div class="details">
+            <div class="paragraphe_section">
                 <h4 class="entreprise">Google</h4>
-                <div>
+                <div class="details_experience">
                     <h5 class="intitule">Prendre l'argent des Gafa</h5>|
                     <h5 class="date">2020/02</h5>|
                     <h5 class="type">CDI</h5>
                 </div>
-                <p class="decriptif">Se faire de l'oseille sur le chomdu</p>
+                <p class="intitule_description">Se faire de l'oseille sur le chomdu</p>
+                <h4 class="entreprise">Google</h4>
+                <div class="details_experience">
+                    <h5 class="intitule">Prendre l'argent des Gafa</h5>|
+                    <h5 class="date">2020/02</h5>|
+                    <h5 class="type">CDI</h5>
+                </div>
+                <!-- maximum 2 -->
+                <p class="intitule_decriptif">Se faire de l'oseille sur le chomdu</p>
             </div>
         </div>
         <div class="section_formation">
             <div class="background">
                 <h3 class="titre_section">Formation</h3>
             </div>
-            <div class="details">
+            <div class="paragraphe_section">
             <h4 class="localite">Pole emploi</h4>
-                <div>
+                <div class="details_experience">
                     <h5 class="intitule">Chomage</h5>|
                     <h5 class="date">2020</h5>|
                     <h5 class="type">CDI</h5>
                 </div>
-                <p class="descriptif">Apprendre comment fonctionne le chomdu pour mieux l'éradiquer</p>
+                <p class="intitule_description">Apprendre comment fonctionne le chomdu pour mieux l'éradiquer</p>
+                <div class="paragraphe_section">
+            <h4 class="localite">Pole emploi</h4>
+                <div class="details_experience">
+                    <h5 class="intitule">Chomage</h5>|
+                    <h5 class="date">2020</h5>|
+                    <h5 class="type">CDI</h5>
+                </div>
+                <p class="intitule_description">Apprendre comment fonctionne le chomdu pour mieux l'éradiquer</p>
+                <!-- maximum 2 -->
             </div>
         </div>
         <div class="section_perso">
             <div class="background">
                 <h3 class="titre_section">Mes passion</h3>
             </div>
-            <div class="details">
+            <div class="paragraphe_section">
                 <h4 class="intitule">Le taf</h4>
-                <p class="descriptif">Plus de taf, moins de chomdu</p>
+                <p class="perso_paragraphe">Plus de taf, moins de chomdu</p>
+                <p class="perso_paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, earum omnis! Doloribus accusantium voluptatum voluptatibus, possimus nisi, repudiandae nulla, rem maiores totam repellendus ut. Eius qui illum velit alias expedita?</p>
+                
             </div>
         </div>
     </div> 
