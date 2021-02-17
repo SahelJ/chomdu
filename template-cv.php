@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="container_cv">
     <section class="colonne_gauche" id="colonne_gauche">
         <div class="photo_profil" id="photo_profil">
-            <img src="" alt="photo-profil">
+            <img src="<?php echo get_template_directory_uri().'/asset/img/lorem_profil_cv.jpg'; ?>" alt="photo-profil">
         </div>
         <div class="wrap_cgcv">
             <div class="titre_cv">
@@ -21,7 +21,7 @@ get_header(); ?>
             </div>
             <div class="paragraphe_cv competences_cv">
                 <h1 class="titre_section">Compétences clés</h1>
-                <h2 class="domaine_competences">Point faible</h2>
+                <p class="domaine_competences">Point faible</p>
                 <p class="niveau_competences">Trop Fort</p> 
                 <!-- a changer -->
             </div>
@@ -55,7 +55,7 @@ get_header(); ?>
                     <h5 class="type">CDI</h5>
                 </div>
                 <!-- maximum 2 -->
-                <p class="intitule_decriptif">Se faire de l'oseille sur le chomdu</p>
+                <p class="intitule_description">Se faire de l'oseille sur le chomdu</p>
             </div>
         </div>
         <div class="section_formation">

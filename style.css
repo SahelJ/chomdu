@@ -40,6 +40,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: 'openSansLight';
+    src: url('asset/fonts/openSansLight/opensans-light-webfont.woff2') format('woff2'),
+         url('asset/fonts/openSansLight/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -683,7 +690,7 @@ nav img{
     display: flex;
     flex-direction: column;
     width: 245px;
-    margin: 65px auto;
+    margin: 15px 65px 0px 65px
 }
 .wrap_cvcd{
     display: flex;
@@ -692,6 +699,10 @@ nav img{
     margin: 35px 60px 0 60px;
 }
 /* container gauche */
+.photo_profil{
+    text-align: center;
+    max-width: 360px;
+}
 .colonne_gauche{
     display: flex;
     width: 360px;
@@ -721,6 +732,9 @@ nav img{
     font-size: 0.9em;
     line-height: 1.2em;
     margin: 20px 0 20px 0;
+}
+.paragraphe_cv p{
+    font-family: 'openSansLight',sans-serif;
 }
 
 /* container droite */
@@ -756,13 +770,54 @@ nav img{
 .details_experience{
     display: flex;
     flex-direction: row;
+    font-family: 'openSansLight',sans-serif;
     font-size: 0.8em;
     color: #2B9BD4;
     margin-bottom: 5px;
 }
 .intitule_description{
+    font-family: 'openSansLight',sans-serif;
     margin-bottom: 15px;
 }
 .perso_paragraphe{
+    font-family: 'openSansLight',sans-serif;
     margin-bottom: 10px;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px){
+
+}
+@media screen and (max-width: 800px){
+    .container_cv{
+    flex-flow: column;
+    }
+    .colonne_gauche{
+        width: 100%;
+    }
+    .colonne_droite{
+        width: 100%;
+    }
+    .photo_profil{
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    .wrap_cgcv{
+        width:85%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .wrap_cvcd  {
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .background h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .paragraphe_section h5{
+        text-align: center;
+        margin: 0 auto;
+    }
 }
