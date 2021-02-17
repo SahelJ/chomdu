@@ -7,6 +7,8 @@
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/general.php';
+require get_template_directory() . '/inc/admin/admin-contact.php';
+
 
 /**
  * Custom template tags for this theme.

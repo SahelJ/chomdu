@@ -142,3 +142,39 @@ function pagination_bar( $custom_query ) {
         ));
     }
 }
+
+
+
+function checkField($errors, $data, $key, $min, $max)
+{
+    if (!empty($data)) {
+        if (mb_strlen($data) < $min) {
+            $errors[$key] = 'Min ' . $min . ' caractères';
+        } elseif (mb_strlen($data) > $max) {
+            $errors[$key] = 'Max ' . $max . ' caractères';
+        }
+    } else {
+        $errors[$key] = 'Veuillez renseigner ce champ';
+    }
+    return $errors;
+}
+
+function checkEmail($errors, $data, $key)
+{
+    if (!filter_var($data, FILTER_VALIDATE_EMAIL)) $errors[$key] = 'Cette adresse mail est invalide';
+    return $errors;
+}
+function isLogged()
+{
+    $result = true;
+    if (empty($_SESSION['netron']['user']) || $_SESSION['netron']['user'] == '') {
+        $result = false;
+    } else {
+        foreach ($_SESSION['netron']['user'] as $key => $value) {
+            if (!isset($key) && !isset($value)) {
+                $result = false;
+            }
+        }
+    }
+    return $result;
+}
