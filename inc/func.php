@@ -142,3 +142,73 @@ function pagination_bar( $custom_query ) {
         ));
     }
 }
+
+
+
+function checkField($errors, $data, $key, $min, $max)
+{
+    if (!empty($data)) {
+        if (mb_strlen($data) < $min) {
+            $errors[$key] = 'Min ' . $min . ' caractères';
+        } elseif (mb_strlen($data) > $max) {
+            $errors[$key] = 'Max ' . $max . ' caractères';
+        }
+    } else {
+        $errors[$key] = 'Veuillez renseigner ce champ';
+    }
+    return $errors;
+}
+
+function checkEmail($errors, $data, $key)
+{
+    if (!filter_var($data, FILTER_VALIDATE_EMAIL)) $errors[$key] = 'Cette adresse mail est invalide';
+    return $errors;
+}
+
+function isLogged()
+{
+    $result = true;
+    if (empty($_SESSION['netron']['user']) || $_SESSION['netron']['user'] == '') {
+        $result = false;
+    } else {
+        foreach ($_SESSION['netron']['user'] as $key => $value) {
+            if (!isset($key) && !isset($value)) {
+                $result = false;
+            }
+        }
+    }
+    return $result;
+}
+
+// VALIDATION
+function validText($errors,$value,$key,$min,$max,$empty = true)
+{
+  if(!empty($value)) {
+    if(strlen($value) < $min) {
+      $errors[$key] = 'Min de '.$min.' caractères.';
+    } elseif(strlen($value) > $max) {
+      $errors[$key] = 'Max de '.$max.' caractères.';
+    }
+  } else {
+    if($empty) {
+      $errors[$key] = ' Veuillez joindre un message.';
+    }
+  }
+  return $errors;
+}
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+
+function formatageDate($valueDate)
+{
+  return date('d/m/Y à H:i',strtotime($valueDate));
+}
