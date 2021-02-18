@@ -38,7 +38,7 @@
             </div>
         </div>
         <nav class="wrap">
-            <a href="#"><img class="logo-header" src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" alt="logo"></a>
+            <a href="#"><img class="logo-header" src="<?php echo get_template_directory_uri().'/asset/img/logo2.png'; ?>" alt="logo"></a>
             <div class="menu">
                 <a class="" href="#">Qui sommes-nous</a>
                 <a class="" href="#">Nous contacter</a>

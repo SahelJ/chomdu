@@ -674,10 +674,32 @@ nav img{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .mention p{
     text-align: justify;
 }
 
+/* 404 */
+.div_404{
+    display: flex;
+}
+.div_404 {
+    background-image: url("asset/img/404.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 850px;
+    width: 100%;
+}
+.div_404 p{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #133F5F ;
+    font-size: 9em;
+
+}
 /* CV */
 .container_cv{
     justify-content: center;
