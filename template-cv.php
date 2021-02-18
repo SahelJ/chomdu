@@ -93,9 +93,10 @@ get_header(); ?>
 
                     <!-- formations -->
 
-                    <h4 class="h4-anim" >Formations</h4>
+                    
 
-                    <div class="formation">
+                    <div class="formation" id="frm">
+                    <h4 class="h4-anim" id="title_frm">Formations</h4>
                         <div class="form_formation_localite form_general">
                             <label for="formation_localite">Le lieu de la formation<span class="obligatoire">*</span></label>
                             <input id="formation_localite" type="text" name="localite" value="<?php if(!empty($_POST['formation_localite'])){echo $_POST['formation_localite'];} ?>">
@@ -131,15 +132,17 @@ get_header(); ?>
                             <input type="date" id="formation_fin" name="formation_fin" value="<?php if(!empty($_POST['formation_fin'])){echo $_POST['formation_fin'];} ?>" min="1950-01-01" max="2023-12-31">
                             <span class="error"><?php if(!empty($errors['formation_fin'])){echo $errors['formation_fin'];} ?></span>
                         </div>
-                        <a class="ajout" href="#">Ajouter une Formation</a>
+                        
                     </div>
+                    <div id="destination_frm"></div>
+                    <a class="ajout" id="ajout_frm"href="#">Ajouter une Formation</a>
 
 
                     <!-- compétences -->
 
                     
 
-                    <div class="competence" id="cc">
+                    <div class="competence" id="cpt">
                     <h4 class="h4-anim" id="title_cpt">Compétences</h4>
                         <div class="form_domaine form_general">
                             <label for="domaine">Description<span class="obligatoire">*</span></label>
@@ -191,9 +194,10 @@ get_header(); ?>
 
                     <!-- experience -->
 
-                    <h4 class="h4-anim" >Experiences</h4>
+                    
 
-                    <div class="experience">
+                    <div class="experience" id="exp">
+                    <h4 class="h4-anim" id="title_exp">Experiences</h4>
                         <div class="form_experience_entreprise form_general">
                             <label for="experience_entreprise">Le lieu de la formation<span class="obligatoire">*</span></label>
                             <input id="experience_entreprise" type="text" name="experience_entreprise" value="<?php if(!empty($_POST['experience_entreprise'])){echo $_POST['experience_entreprise'];} ?>">
@@ -229,15 +233,16 @@ get_header(); ?>
                             <input type="date" id="experience_fin" name="experience_fin" value="<?php if(!empty($_POST['experience_fin'])){echo $_POST['experience_fin'];} ?>" min="1950-01-01" max="2023-12-31">
                             <span class="error"><?php if(!empty($errors['experience_fin'])){echo $errors['experience_fin'];} ?></span>
                         </div>
-                        <a class="ajout" href="#">Ajouter une Expérience</a>
                     </div>
-
+                    <div id="destination_exp"></div>
+                    <a class="ajout" id="ajout_exp"href="#">Ajouter une Expérience</a>
 
                     <!-- Interet -->
 
-                    <h4 class="h4-anim" >Interets</h4>
+                    
 
-                    <div class="interet">
+                    <div class="interet" id="int">
+                    <h4 class="h4-anim" id="title_int">Intérets</h4>
                         <div class="form_interet_intitule form_general">
                             <label for="interet_intitule">Description<span class="obligatoire">*</span></label>
                             <input id="interet_intitule" type="text" name="interet_intitule" value="<?php if(!empty($_POST['interet_intitule'])){echo $_POST['interet_intitule'];} ?>">
@@ -249,8 +254,10 @@ get_header(); ?>
                             <textarea id="interet_description" name="interet_description"><?php if(!empty($_POST['interet_description'])){echo $_POST['interet_description'];} ?></textarea>
                             <span class="error"><?php if(!empty($errors['interet_description'])){echo $errors['interet_description'];} ?></span>
                         </div>
-                        <a class="ajout" href="#">Ajouter un interet</a>
+                        
                     </div>
+                    <div id="destination_int"></div>
+                    <a class="ajout" id="ajout_int" href="#">Ajouter un intéret</a>
                 </div>
     </div>           
                 

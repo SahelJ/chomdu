@@ -104,25 +104,58 @@ const init = () => {
     duplicate();
 }
 const duplicate = () => {
-    var destination = document.getElementById("destination_cpt");
-    var cpt = $('#ajout_cpt');
+    var destination_cpt = document.getElementById("destination_cpt");
     var title_cpt = document.getElementById('title_cpt');
-    count = 1;
+    var cpt = $('#ajout_cpt');
+
     cpt.click((e) => {
         e.preventDefault();
-        var source = document.getElementById("cc");
+        var source = document.getElementById("cpt");
         let evilclone = source.cloneNode(true);
         evilclone.removeAttribute("id");
-        destination.appendChild(evilclone);
-        count += 1;
-        if (count == 1) {
-            
-        }else {
-            document.write("<h1>Hello World!</h1><p>Have a nice day!</p>");
-        }
-        title_cpt.innerHTML = "Compétence : " + count;
-        
+        destination_cpt.appendChild(evilclone);
+        title_cpt.innerHTML = "Compétences";
     })
+
+    var destination_frm = document.getElementById("destination_frm");
+    var title_frm = document.getElementById('title_frm');
+    var frm = $('#ajout_frm');
+    
+    frm.click((e) => {
+        e.preventDefault();
+        var source = document.getElementById("frm");
+        let evilclone = source.cloneNode(true);
+        evilclone.removeAttribute("id");
+        destination_frm.appendChild(evilclone);
+        title_frm.innerHTML = "Formations";
+    })
+
+    var destination_exp = document.getElementById("destination_exp");
+    var title_exp = document.getElementById('title_exp');
+    var exp = $('#ajout_exp');
+    
+    exp.click((e) => {
+        e.preventDefault();
+        var source = document.getElementById("exp");
+        let evilclone = source.cloneNode(true);
+        evilclone.removeAttribute("id");
+        destination_exp.appendChild(evilclone);
+        title_exp.innerHTML = "Expériences";
+    })
+
+    var destination_int = document.getElementById("destination_int");
+    var title_int = document.getElementById('title_int');
+    var int = $('#ajout_int');
+    
+    int.click((e) => {
+        e.preventDefault();
+        var source = document.getElementById("int");
+        let evilclone = source.cloneNode(true);
+        evilclone.removeAttribute("id");
+        destination_int.appendChild(evilclone);
+        title_int.innerHTML = "Intérets";
+    })
+
 }
 const initModal = () => {
     const modalsWrapper = $('.modal-wrapper');
