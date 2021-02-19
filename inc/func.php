@@ -191,7 +191,7 @@ function validText($errors,$value,$key,$min,$max,$empty = true)
     }
   } else {
     if($empty) {
-      $errors[$key] = ' Veuillez joindre un message.';
+      $errors[$key] = ' Veuillez renseigner ce champ.';
     }
   }
   return $errors;
@@ -211,4 +211,24 @@ function generateRandomString($length = 10) {
 function formatageDate($valueDate)
 {
   return date('d/m/Y à H:i',strtotime($valueDate));
+}
+
+function insert($pdo, $table, $columns, $values)
+{
+    if (!is_array($columns) || !is_array($values)) return;
+
+    $bindValues = [];
+    for ($i = 0; $i < count($values); $i++) {
+        $bindValues[] = ':value' . $i;
+    }
+
+    $strBindValues = implode(', ', $bindValues);
+    $strColumns = implode(', ', $columns);
+
+    $sql = 'INSERT INTO ' . $table . ' (' . $strColumns . ') VALUES (' . $strBindValues . ')';
+    $query = $pdo->prepare($sql);
+    for ($i = 0; $i < count($values); $i++) {
+        $query->bindValue(':value' . $i, $values[$i]);
+    }
+    $query->execute();
 }

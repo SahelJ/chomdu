@@ -8,43 +8,39 @@ Template Name: home
 get_header(); ?>
   <div class="header-nuage animate">
             <div class="header-text wrap">
-                <h2 class="h2-anim">fast,reliable,flexible,support</h2>
-                <h3 class="h3-anim">Employemant screening & background check services</h3>
-                <a href="">learn more about us</a>
+                <h2 class="h2-anim">On a un job pour vous ! </h2>
+                <h3 class="h3-anim">Bienvenue sur Chomdu.fr !</h3>
+                <a href="">Découvrez Chomdu.fr</a>
             </div>
         </div>
 <section class="descriptif wrap">
         <div>
         <div class="descriptif-text">
             <div class="descriptif-title">
-                <h2 class="h2-anim">select the rigth condidate</h2>
-                <h4 class="h4-anim">over 5,500 client worlwide</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime voluptas ipsum eum, suscipit
-                    unde
-                    ratione saepe aperiam!</p>
+                <h2 class="h2-anim">Trouvez votre prochain emploi</h2>
+                <h4 class="h4-anim">Créez un cv, devenez disponible pour sortir du Chomdu !</h4>
+                <p>En créant votre CV sur Chomdu.fr, vous créez de la visibilité autour de vous et de votre parcours. Rendez vous disponible auprès des recruteurs dès maintenant ! </p>
             </div>
 
         </div>
         <div class="descriptif-info">
-            <h2 class="h2-anim">social media <span>. featured services</span></h2>
-            <h4 class="h4-anim">discover the good ...</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio dolores natus cum debitis, illo
-                eos quibusdam autem, fugiat beatae aliquam magnam tempora doloremque inventore quod repellat quas
-                dolorum nulla!</p>
-            <div class="descriptif-link">
+            <h2 class="h2-anim">Trouvez le candidat idéal<span>dès maintenant</span></h2>
+            <h4 class="h4-anim">Trouvez la perle rare sur notre site.</h4>
+            <p>Trouvez le prochain membre de votre équipe parmis nos cv. Trouvez votre candidat idéal et sortez le du Chomdu.</p>
+            <!-- <div class="descriptif-link">
                 <a href="">learn more</a>
                 <a href="">view simple</a>
-            </div>
+            </div> -->
         </div>
     </div>
         <div class="shape"><img src="<?php echo get_template_directory_uri() ?>/asset/img/fond_chemise.jpg" alt=""></div>
     </section>
     <section class="services wrap">
         <div class="services-title">
-            <h4 class="h4-anim">Our services</h4>
-            <a href="">
-                <h2 class="h2-anim">view all services</h2>
-            </a>
+            <h4 class="h4-anim">Nos services</h4>
+            <!-- <a href="">
+                <h2 class="h2-anim"></h2>
+            </a> -->
         </div>
         <div class="trait"></div>
         <div class="services-all">

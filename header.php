@@ -53,14 +53,15 @@
             <div class="menu">
                 <a class="" href="<?php echo esc_url(home_url('about')) ?>">Qui sommes-nous</a>
                 <a class="" href="<?php echo esc_url(home_url('contact')) ?>">Nous contacter</a>
-                
+
                 <?php if (is_user_logged_in()) { ?>
                     <?php $current_user = wp_get_current_user();
                       $roles = $current_user->roles; 
                       if ($roles[0] == 'recruteur') {
-                          echo '<a class="" href="'.esc_url(home_url('formcv')).'">Afficher les CV</a>';
+                          echo '<a class="" href="'.esc_url(home_url('cv')).'">Afficher les CV</a>';
                       }else {
                         echo '<a class="" href="'.esc_url(home_url('cv')).'">Deposer un CV</a>';
+                        echo '<a class="" href="'.esc_url(home_url('mon cv')).'">voir mon cv</a>';
                      }; 
                      
                      }else {
@@ -122,9 +123,9 @@
                 <input type="password" name="pwd" id="pwd" placeholder="Password" />
                 <input type="email" name="email" id="email" placeholder="email" />
 
-                <div id="ckbox">
+                <div id="ckbox_inscription">
                     <select name="role" id="role">
-                        <option value="subscribe">Subscribe</option>
+                        <option value="subscriber">Abonnée</option>
                         <option value="recruteur">Recruteur</option>
                     </select>
                 </div>

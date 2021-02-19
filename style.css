@@ -310,6 +310,7 @@ nav img{
     background-size: cover;
     background-attachment: local;
 }
+
 .header-text2 {
     height: 515px;
     display: flex;
@@ -890,7 +891,7 @@ nav img{
     transition: .7s;
 }
 
-#formation_debut{
+#date_debut{
     font-family: 'arvo',sans-serif;
     color: #133F5F;
     width: 100%;
@@ -903,7 +904,7 @@ nav img{
 	resize: none;
 }
 
-#formation_fin{
+#date_fin{
     font-family: 'arvo',sans-serif;
     color: #133F5F;
     width: 100%;
@@ -916,7 +917,7 @@ nav img{
 	resize: none;
 }
 
-#experience_debut{
+#edate_debut{
     font-family: 'arvo',sans-serif;
     color: #133F5F;
     width: 100%;
@@ -929,7 +930,7 @@ nav img{
 	resize: none;
 }
 
-#experience_fin{
+#date_fin{
     font-family: 'arvo',sans-serif;
     color: #133F5F;
     width: 100%;
@@ -1027,7 +1028,7 @@ nav img{
     width: 360px;
     /* flex:1; */
     flex-direction: column;
-    background-color: #794B99;
+    background-color: #133F5F;
 }
 .titre_cv h1 {
     font-family: 'archi',sans-serif;
@@ -1053,7 +1054,8 @@ nav img{
     margin: 20px 0 20px 0;
 }
 .paragraphe_cv p{
-    font-family: 'openSansLight',sans-serif;
+    font-family: 'arvo',sans-serif;
+    text-align: justify;
 }
 
 /* container droite */
@@ -1065,7 +1067,7 @@ nav img{
     
 }
 .background h3{
-    background-color: #794B99;
+    background-color: #133F5F;
     width: 360px;
     padding: 15px 15px 15px 15px;
 }
@@ -1089,18 +1091,21 @@ nav img{
 .details_experience{
     display: flex;
     flex-direction: row;
-    font-family: 'openSansLight',sans-serif;
+    font-family: 'arvo',sans-serif;
     font-size: 0.8em;
     color: #2B9BD4;
     margin-bottom: 5px;
+    text-align: justify;
 }
 .intitule_description{
-    font-family: 'openSansLight',sans-serif;
+    font-family: 'arvo',sans-serif;
     margin-bottom: 15px;
+    text-align: justify;
 }
 .perso_paragraphe{
-    font-family: 'openSansLight',sans-serif;
+    font-family: 'arvo',sans-serif;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 /* responsive */
@@ -1302,6 +1307,18 @@ nav img{
 #ckbox p {
     margin-top: 18px;
 }
+#ckbox_inscription {
+display: flex;
+justify-content: center;
+}
+#email {
+    margin-bottom: 10px;
+}
+#role {
+border-radius: 30px;
+
+font-family: 'arvo', sans-serif;
+}
 
 .modal-wrapper .modal-content input {
     width: 100%;
@@ -1382,4 +1399,27 @@ nav img{
 
 .btn.btn-error {
     background-color: var(--red) !important;
+}
+
+/* 404 */
+
+.div_404{
+    display: flex;
+}
+.div_404 {
+    background-image: url("asset/img/404.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: 850px;
+    width: 100%;
+}
+.div_404 p{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #133F5F ;
+    font-size: 9em;
+
 }
